@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stellar-notes-cli"
+version = "0.1.0"
+description = "A tiny, dependency-free CLI for managing markdown notes with tags and simple full-text search."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "SAI", email = "sai466769@gmail.com" }]
+
+[project.scripts]
+stellar-notes = "stellar_notes_cli.__main__:main"
+
+[tool.setuptools.package-data]
+stellar_notes_cli = ["py.typed"]
